@@ -1,0 +1,154 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776379536654,
+  "projectRoot": "/Users/nkt/dev/hexenon/DefiLlama-Adapters",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pnpm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "pnpm build",
+    "testCommand": "pnpm test",
+    "lintCommand": "pnpm lint",
+    "devCommand": null,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "node scripts/buildImports.js",
+      "lint": "eslint -c eslint.config.js .",
+      "eslint:github-action": "eslint -c eslint.config.js .",
+      "test-interactive": "node utils/testInteractive",
+      "tvl": "cd utils;npm i; cd ..; node utils/testInteractive",
+      "treasury": "cd utils;npm i; cd ..; node utils/testInteractive treasury",
+      "entities": "cd utils;npm i; cd ..; node utils/testInteractive entities",
+      "useTokenLabels": "node utils/scripts/useTokenLabels.js",
+      "biggest-files": "node utils/scripts/sortTopFilesByLines.js",
+      "check-bitcoin-duplicates": "node utils/scripts/checkBTCDupsv2.js",
+      "string-timestamp": "node utils/scripts/stringTimestamp.js",
+      "sort-chains": "node projects/helper/getChainList.js"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [],
+    "mainDirectories": [
+      "scripts"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "projects": {
+      "path": "projects",
+      "purpose": null,
+      "fileCount": 171,
+      "lastAccessed": 1776379536618,
+      "keyFiles": [
+        "1inch.js",
+        "agave.js",
+        "algodex.js",
+        "antex.js",
+        "apricot.js"
+      ]
+    },
+    "registries": {
+      "path": "registries",
+      "purpose": null,
+      "fileCount": 15,
+      "lastAccessed": 1776379536620,
+      "keyFiles": [
+        "aave.js",
+        "aaveV3.js",
+        "balancer.js",
+        "compound.js",
+        "deadAdapters.json"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 3,
+      "lastAccessed": 1776379536621,
+      "keyFiles": [
+        "buildImports.js",
+        "compareModules.js",
+        "migrateDeadProjects.js"
+      ]
+    },
+    "typings": {
+      "path": "typings",
+      "purpose": "Type definitions",
+      "fileCount": 3,
+      "lastAccessed": 1776379536623,
+      "keyFiles": [
+        "getBlock.d.ts",
+        "handleError.d.ts",
+        "index.d.ts"
+      ]
+    },
+    "utils": {
+      "path": "utils",
+      "purpose": "Utility functions",
+      "fileCount": 7,
+      "lastAccessed": 1776379536625,
+      "keyFiles": [
+        "compactStringify.js",
+        "formatAbis.js",
+        "formatIdl.js",
+        "handleError.js",
+        "package-lock.json"
+      ]
+    },
+    "utils/scripts": {
+      "path": "utils/scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 15,
+      "lastAccessed": 1776379536640,
+      "keyFiles": [
+        "changeCoreAssetsFormat.js",
+        "changeCoreAssetsFormat2.js",
+        "checkBTCDups.js"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "projects/mining-launcher/index.js",
+      "accessCount": 3,
+      "lastAccessed": 1776379592509,
+      "type": "file"
+    },
+    {
+      "path": "projects/mining-launcher/derive-pdas.js",
+      "accessCount": 1,
+      "lastAccessed": 1776379582509,
+      "type": "file"
+    },
+    {
+      "path": "projects/helper/svmChainConfig.js",
+      "accessCount": 1,
+      "lastAccessed": 1776379709845,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

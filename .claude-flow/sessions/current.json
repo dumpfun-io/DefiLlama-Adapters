@@ -1,0 +1,13 @@
+{
+  "id": "session-1776379861502",
+  "startedAt": "2026-04-16T22:51:01.502Z",
+  "platform": "darwin",
+  "cwd": "/Users/nkt/dev/hexenon/DefiLlama-Adapters",
+  "context": {},
+  "metrics": {
+    "edits": 0,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  }
+}
